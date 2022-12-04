@@ -20,5 +20,10 @@ namespace OOP
         {
             return 0.5 * b * h;
         }
+        public double CalcTriangleSquare(double ab, double ac, int alpha)
+        {
+            double rads = alpha * Math.PI / 180;
+            return 0.5 * ab * ac * Math.Sin(alpha);
+        }
     }
 }
