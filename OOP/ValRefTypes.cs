@@ -6,7 +6,33 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    internal class ValRefTypes
+
+    public struct EvilStruct
     {
+        public int X;
+        public int Y;
+
+        public PointRef PointRef { get; internal set; }
+    }
+    public struct PointVal
+    {
+        public int X;
+        public int Y;
+
+        public void LogValues()
+        {
+          Console.WriteLine($"X={X}; Y={Y}");   
+        }
+    }
+
+    public class PointRef
+    {
+        public int X;
+        public int Y;
+
+        public void LogValues()
+        {
+            Console.WriteLine($"X={X}; Y={Y}");
+        }
     }
 }
