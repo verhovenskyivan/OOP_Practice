@@ -7,12 +7,23 @@ namespace OOP
     {
         static void Main(string[] args)
         {
+            Shape[] shapes = new Shape[2];
+            shapes[0] = new Triangle(10, 20, 30);
+            shapes[1] = new Rectangle(5, 10);
+
+            foreach(Shape shape in shapes)
+            {
+                shape.Draw();
+                Console.WriteLine(shape.Perimeeter());
+            }
+        }
+        static void Terminal()
+        {
             ModelXTerminal terminal = new ModelXTerminal("123");
             terminal.Connect();
 
             Console.ReadLine();
         }
-
         static void Do(object obj)
         {
             bool isPointRef = obj is PointRef;
@@ -65,7 +76,6 @@ namespace OOP
 
             Console.WriteLine($"Swapped a=P{a}, b={b}");
         }
-
         static void AddNumbers(List<int> numbers) 
         {
             numbers.Add(1);
