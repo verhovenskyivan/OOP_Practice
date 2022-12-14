@@ -32,7 +32,7 @@ namespace OOP
             this.bc = bc;
             this.ac = ac;
 
-            Console.WriteLine("Triangle created");
+            Console.WriteLine("Triangle has been created");
         }
         public override double Area()
         {
@@ -42,7 +42,7 @@ namespace OOP
 
         public override void Draw()
         {
-            Console.WriteLine("Drawing Triangle");
+            Console.WriteLine("Drawing a Triangle");
         }
 
         public override double Perimeeter()
@@ -61,7 +61,7 @@ namespace OOP
             this.width = width;
             this.height = height;
 
-            Console.WriteLine("Rectangle created");
+            Console.WriteLine("Rectangle has been created");
         }
 
         public override double Area()
@@ -71,7 +71,7 @@ namespace OOP
 
         public override void Draw()
         {
-            Console.WriteLine("Drawing Rectangle");
+            Console.WriteLine("Drawing agg Rectangle");
         }
 
         public override double Perimeeter()
