@@ -71,7 +71,7 @@ namespace OOP
 
         public override void Draw()
         {
-            Console.WriteLine("Drawing agg Rectangle");
+            Console.WriteLine("Drawing a Rectangle");
         }
 
         public override double Perimeeter()
